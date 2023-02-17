@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+    font-family: 'Ubuntu';
+
+}
+
+
+h1, h2 {
+    margin: 0px;
+}
+
+
+#pokedex {
+    background-color: rgb(255, 255, 255);
+}
+
+.header {
+    z-index: 30;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #393939;
+    color: white;
+    padding-left: 50px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+}
+
+.headTitle {
+    display: flex;
+    height: 50px;
+
+    align-items: center;
+}
+
+#pokemonContainer {
+    justify-content: center;
+
+    height:  fit-content;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pokemonBox {
+    background-color: #F7D02C;
+    height: 300px;
+    width: 230px;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 15px 15px;
+    position: relative;
+    border-bottom: black solid 5px;
+    cursor: url(https://cdn.custom-cursor.com/db/249/32/arrow2282.png) , pointer!important;
+}
+
+.nameBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: #2e2e2e5e;
+    z-index: 1;
+    border-top-left-radius: 33px;
+    border-top-right-radius: 33px;
+}
+
+.nameBgBottom {
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 55px;
+    background-color: #2e2e2e5e;
+    z-index: 1;
+    border-bottom-left-radius: 33px;
+    border-bottom-right-radius: 33px;
+}
+
+.pokemonName {
+    color: white;
+    z-index: 2;
+
+}
+
+.infoElementBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+}
+
+.pokeIndex {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.nameIndex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.boxBackground {
+    position: absolute;
+    top: 50px;
+    right: 8px;
+    transform: rotate(-30deg);
+    padding-top: 15px;
+    padding-right: 10px;
+
+}
+
+.pokeballBg {
+    filter: opacity(10%);
+}
+
+.pokeCard {
+    height: 440px;
+    width: 600px;
+    background-color: #ffffff;
+    border-radius: 70px 70px 0px 0px;
+    margin-bottom: -70px;
+    border: black solid 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    box-shadow: inset 0px 0px 30px 0px rgb(0 0 0 / 75%);
+    z-index: 50;
+}
+.cardTypeContainer{
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+.heightAndWeight{
+    height: 145px;
+    width: 50px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+
+}
+.pokemonWeight {
+    display: flex;
+    justify-content: center;
+    row-gap: 5px;
+    width: 50px;
+    height: 100px;
+    background-color: #7b7b7b;
+    border-radius: 30px;
+    color: white;
+    flex-direction: column-reverse;
+    align-items: center;
+  
+ box-sizing: border-box;
+}
+.pokemonHeight{
+    display: flex;
+    justify-content: center;
+    row-gap: 5px;
+    width: 50px;
+    height: 100px;
+    background-color: #7b7b7b;
+    border-radius: 30px;
+    color: white;
+    flex-direction: column;
+    align-items: center;
+  
+ box-sizing: border-box;
+}
+.allStats{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+}
+.cardControlBar{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 40px;
+    align-items: center;
+    margin-top: 20px;
+    color: white;
+
+}
+
+.closePokeStats{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 45px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.pokemonStats{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    row-gap: 15px;
+    color: #ffffff;
+    width: 180px;
+}
+.statsBarContainer{
+    row-gap: 37px;
+height: 400px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-top: 7px;
+}
+.realStats{
+    height: 10px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statsBar {
+    height: 10px;
+    width: 300px;
+    background-color: #929292;
+    border-radius: 10px;
+}
+.statsName{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 300px;
+}
+
+.pokeCardInfo {
+    height: 480px;
+    width: 600px;
+    background-color: blue;
+    border-bottom: black solid 10px;
+    border: black solid 1px;
+    border-radius: 70px;
+    z-index: 50;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+
+.pokeCardContainer {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.d-none{
+    display: none !important;
+}
+.searchPokemonBox{
+    background-color: #929292;
+    height: 35px;
+    width: 250px;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 30px;
+    align-items: center;
+}
+.searchPokemon{
+height: 35px;
+padding: 0;
+width: 200px;
+border-radius: 30px 0 0 30px;
+border: none;
+outline: none;
+box-sizing: border-box;
+padding-left: 15px;
+
+}
+.searchPokemonBtn{
+height: 35px;
+width: 50px;
+border-radius: 0 30px 30px 0;
+border: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.placeholder {
+    height: 5px;
+    width: calc(130px + 80px);
+    
+}
+.scroll-none{
+    overflow: hidden;
+}
+.backgroundStatsClose {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 7;
+    backdrop-filter: blur(10px);
+}
+.loadMoreContainer{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+
+}
+.loadMoreButton{
+    height: 50px;
+    width: 200px;
+    background-color: #393939;
+    border-radius: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+}
+
+.mobileSearch {
+    display: none;
+}
+
+.MobileStatTitle {
+    display: none;
+}
+.searchMobileImg {
+    display: none;
+}
+
+.loadingInfo {
+    height: 120px;
+    width: 450px;
+    background-color: rgb(193, 34, 34);
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
